@@ -175,6 +175,18 @@ export const semesterOffDays = [
 ];
 
 export const announcements = [
+   {
+    date: "2026-05-21",
+    title: "Information System Management classroom Code",
+    content:
+      "7helbyk6",
+  },
+   {
+    date: "2026-05-14",
+    title: "Machine Learning classroom Code",
+    content:
+      "t2rkjzit",
+  },
   {
     date: "2026-05-26",
     title: "Software project management classroom Code",
