@@ -1,0 +1,429 @@
+﻿/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f4f6fb;
+  color: #111827;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%);
+}
+
+.page {
+  width: min(1080px, calc(100% - 32px));
+  margin: 0 auto 40px;
+  padding: 24px 0 0;
+}
+
+.site-header {
+  padding: 24px 16px;
+  margin: 0 auto;
+  max-width: 1080px;
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.site-title {
+  font-size: clamp(1.7rem, 2.4vw, 2.5rem);
+  letter-spacing: -0.03em;
+}
+
+.site-subtitle {
+  display: block;
+  margin-top: 8px;
+  color: #4b5563;
+  font-size: 0.98rem;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.top-nav a {
+  color: #0f172a;
+  text-decoration: none;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  padding: 10px 14px;
+  background: #ffffff;
+  transition: all 150ms ease-in-out;
+  font-size: 0.95rem;
+}
+
+.top-nav a:hover,
+.top-nav a.active {
+  border-color: #2563eb;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.countdown-card {
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.08);
+  padding: 28px;
+  min-height: 180px;
+  display: grid;
+  align-content: center;
+}
+
+.countdown-card.small {
+  min-height: auto;
+}
+
+.countdown-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.countdown-meta {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 14px;
+}
+
+.countdown-value {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #111827;
+}
+
+.countdown-note {
+  margin-top: 12px;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.holiday-card {
+  background: #fffbeb;
+  border-left: 6px solid #f59e0b;
+}
+
+.routine-section,
+.today,
+.grid-2,
+.about {
+  margin-top: 24px;
+}
+
+.section-title,
+.subsection-title {
+  color: #111827;
+}
+
+.section-title {
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.subsection-title {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .grid-2,
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cards {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  padding: 18px;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.card p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.card .meta {
+  font-size: 0.87rem;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+  background-color: white;
+}
+
+th,
+td {
+  padding: 14px 12px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #1d4ed8;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.empty-cell {
+  color: #9ca3af;
+}
+
+.calendar {
+  width: 100%;
+}
+
+.calendar-month {
+  margin-bottom: 22px;
+}
+
+.calendar-month-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.calendar-grid .cal-header,
+.calendar-grid .cal-cell {
+  border-radius: 14px;
+}
+
+.cal-header {
+  background: #eef2ff;
+  color: #1d4ed8;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 6px;
+}
+
+.cal-cell {
+  min-height: 58px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px;
+  color: #334155;
+}
+
+.cal-cell.off {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+.cal-cell.empty {
+  background: transparent;
+  border-color: transparent;
+}
+
+.cal-day-number {
+  font-weight: 700;
+}
+
+.about {
+  background: white;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.06);
+}
+
+.about p,
+.about a {
+  font-size: 1rem;
+  color: #334155;
+}
+
+.about a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+.today {
+  margin-top: 30px;
+}
+
+.today-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.today-header h2 {
+  font-size: 1.6rem;
+}
+
+.today-date {
+  color: #475569;
+}
+
+.class-list {
+  display: grid;
+  gap: 16px;
+}
+
+.class-card {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 16px;
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.class-card.current {
+  border-color: #10b981;
+  background: #ecfdf5;
+}
+
+.class-card .time {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.class-card .details h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.class-card .details p {
+  color: #475569;
+}
+
+.holiday-card {
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.empty-state {
+  padding: 28px;
+  text-align: center;
+  background: white;
+  border: 1px dashed #cbd5e1;
+  border-radius: 18px;
+  color: #64748b;
+}
+
+footer {
+  width: min(1080px, calc(100% - 32px));
+  margin: 0 auto 24px;
+  color: #475569;
+  font-size: 0.95rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 6px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 12px;
+  }
+
+  .site-header {
+    padding: 18px 12px;
+  }
+
+  .top-nav a {
+    font-size: 0.9rem;
+    padding: 9px 12px;
+  }
+
+  .countdown-card {
+    padding: 20px;
+  }
+
+  .class-card {
+    grid-template-columns: 1fr;
+  }
+}
