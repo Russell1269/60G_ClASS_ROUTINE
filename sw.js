@@ -1,17 +1,17 @@
 const CACHE_NAME = "my-site-cache-v19";
 
 const FILES_TO_CACHE = [
-  "./",
-  "./index.html",
-  "./style.css",
-  "./script.js",
-  "./data.js",
-  "./about.html",
-  "./common.html",
-  "./deadlines.html",
-  "./exams.html",
-  "./offdays.html",
-];
+//   "./",
+//   "./index.html",
+//   "./style.css",
+//   "./script.js",
+//   "./data.js",
+//   "./about.html",
+//   "./common.html",
+//   "./deadlines.html",
+//   "./exams.html",
+//   "./offdays.html",
+// ];
 
 // INSTALL
 self.addEventListener("install", (event) => {
