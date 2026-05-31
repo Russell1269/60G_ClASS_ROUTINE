@@ -56,7 +56,7 @@
 //   );
 // }
 
-const CACHE_NAME = "my-site-cache-v17";
+const CACHE_NAME = "my-site-cache-v18";
 
 const FILES_TO_CACHE = [
   "./",
