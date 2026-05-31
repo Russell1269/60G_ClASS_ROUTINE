@@ -8,10 +8,10 @@ export const timeSlots = [
 ];
 
 export const routine60F = {
-  batch: "60-A",
-  semester: "Spring 2026",
+  batch: "60-G",
+  semester: "Summer 2026",
   department: "CSE",
-  effectiveFrom: "2026-01-12",
+  effectiveFrom: "2026-06-01",
 
   days: {
     Monday: [
@@ -20,7 +20,7 @@ export const routine60F = {
         courseTitle: "INFORMATION SYSTEMS MANAGEMENT",
         teacher: "SAK",
         type: "Theory",
-        room: "5220 (515)",
+        room: "5230 (516)",
         slot: 1,
       },
       {
@@ -28,15 +28,15 @@ export const routine60F = {
         courseTitle: "SOFTWARE PROJECT MANAGEMENT",
         teacher: "ASM",
         type: "Theory",
-        room: "Lab 6150 (610)",
-        slot: 3,
+        room: "Lab 5180 (511)",
+        slot: 6,
       },
       {
         courseCode: "CSE0613405",
         courseTitle: "MACHINE LEARNING",
         teacher: "MTZ",
         type: "Theory",
-        room: "5179 (514)",
+        room: "6170 (614)",
         slot: 4,
       },
       {
@@ -44,7 +44,7 @@ export const routine60F = {
         courseTitle: "ARTIFICIAL INTELLIGENCE",
         teacher: "KMI",
         type: "Theory",
-        room: "5070 (532)",
+        room: "5070 (502)",
         slot: 5,
       },
     ],
@@ -53,9 +53,9 @@ export const routine60F = {
       {
         courseCode: "CSE0613311",
         courseTitle: "ARTIFICIAL INTELLIGENCE",
-        teacher: "MTZ",
+        teacher: "KMI",
         type: "Theory",
-        room: "5220 (515)",
+        room: "5230 (516)",
         slot: 1,
       },
       {
@@ -63,7 +63,7 @@ export const routine60F = {
         courseTitle: "MACHINE LEARNING",
         teacher: "MTZ",
         type: "Theory",
-        room: "5080 (501)",
+        room: "Lab 0019 (B105)",
         slot: 2,
       },
       {
@@ -81,7 +81,7 @@ export const routine60F = {
         courseTitle: "ARTIFICIAL INTELLIGENCE LAB",
         teacher: "KMI",
         type: "Lab",
-        room: "Lab 6210 (616)",
+        room: "Lab 5210 (514)",
         slot: 1,
       },
       {
@@ -89,7 +89,7 @@ export const routine60F = {
         courseTitle: "INFORMATION SYSTEMS MANAGEMENT",
         teacher: "SAK",
         type: "Theory",
-        room: "5220 (515)",
+        room: "5030 (508)",
         slot: 2,
       },
       {
@@ -97,7 +97,7 @@ export const routine60F = {
         courseTitle: "ARTIFICIAL INTELLIGENCE LAB",
         teacher: "KMI",
         type: "Lab",
-        room: "Lab 6190 (614)",
+        room: "Lab 5160 (509)",
         slot: 5,
       },
     ],
