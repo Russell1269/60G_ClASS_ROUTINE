@@ -227,7 +227,7 @@ export const exams = [
     courseCode: "MIS0611401",
     courseTitle: "Information System Management",
     type: "Class Test",
-    venue: "Room 5220 (515)",
+    venue: "Room 5030 (508)",
   },
   {
     datetime: "2026-06-19T09:00",
