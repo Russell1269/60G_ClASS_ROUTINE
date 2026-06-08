@@ -223,7 +223,7 @@ export const announcements = [
 
 export const exams = [
   {
-    datetime: "2026-06-04T10:05",
+    datetime: "2026-06-08T11:25",
     courseCode: "MIS0611401",
     courseTitle: "Information System Management",
     type: "Class Test",
