@@ -243,20 +243,20 @@ export const exams = [
     type: "Midterm",
     venue: "TBA",
   },
-  {
-    datetime: "2026-06-08T11:25",
-    courseCode: "MIS0611401",
-    courseTitle: "Information System Management",
-    type: "Class Test",
-    venue: "Room 5030 (508)",
-  },
-  {
-    datetime: "2026-08-18T09:00",
-    courseCode: "FINAL",
-    courseTitle: "Semester Final Examinations (Start)",
-    type: "Final",
-    venue: "TBA",
-  },
+  // {
+  //   datetime: "2026-06-08T11:25",
+  //   courseCode: "MIS0611401",
+  //   courseTitle: "Information System Management",
+  //   type: "Class Test",
+  //   venue: "Room 5030 (508)",
+  // },
+  // {
+  //   datetime: "2026-08-18T09:00",
+  //   courseCode: "FINAL",
+  //   courseTitle: "Semester Final Examinations (Start)",
+  //   type: "Final",
+  //   venue: "TBA",
+  // },
 ];
 
 export const deadlines = [
