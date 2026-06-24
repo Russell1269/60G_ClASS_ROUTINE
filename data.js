@@ -124,15 +124,8 @@ export const daysOfWeek = [
   "Thursday",
 ];
 
-/**
- * ===== Extra semester planner datasets (static) =====
- * Dates are based on your pasted academic calendar (Summer 2026 / May–August 2026).
- * Update these arrays anytime by editing this file.
- */
 
 export const semesterOffDays = [
-  // Classes begin 13 May 2026
-  // Eid-ul-Adha: 26–31 May 2026
   "2026-05-26",
   "2026-05-27",
   "2026-05-28",
@@ -223,18 +216,39 @@ export const announcements = [
 
 export const exams = [
   {
+  datetime: "2026-07-08T10:00",
+    courseCode: "MIS0611401",
+    courseTitle: "Information System Management",
+    type: "Midterm",
+    venue: "TBA",
+  },
+  {
+    datetime: "2026-07-06T10:00",
+    courseCode: "CSE0613405",
+    courseTitle: "MACHINE LEARNING",
+    type: "Midterm",
+    venue: "TBA",
+  },
+  {
+    datetime: "2026-07-01T10:00",
+    courseCode: "CSE0613401",
+    courseTitle: "SOFTWARE PROJECT MANAGEMENT",
+    type: "Midterm",
+    venue: "TBA",
+  },
+  {
+    datetime: "2026-06-29T10:00",
+    courseCode: "CSE0613311",
+    courseTitle: "ARTIFICIAL INTELLIGENCE",
+    type: "Midterm",
+    venue: "TBA",
+  },
+  {
     datetime: "2026-06-08T11:25",
     courseCode: "MIS0611401",
     courseTitle: "Information System Management",
     type: "Class Test",
     venue: "Room 5030 (508)",
-  },
-  {
-    datetime: "2026-06-19T09:00",
-    courseCode: "MIDTERM",
-    courseTitle: "Mid-Term Examinations (Week Start)",
-    type: "Mid-Term",
-    venue: "TBA",
   },
   {
     datetime: "2026-08-18T09:00",
